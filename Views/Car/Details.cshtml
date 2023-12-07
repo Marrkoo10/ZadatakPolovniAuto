@@ -1,0 +1,19 @@
+﻿@model ZadatakPolovniAuto.Models.Car
+
+@{
+    ViewData["Title"] = "Detalji automobila";
+}
+
+<h1>Detalji automobila</h1>
+
+<div>
+    <h2>@Model.Marka @Model.Model</h2>
+    <p>Godište: @Model.Godiste</p>
+    <p>Zapremina motora: @Model.ZapreminaMotora</p>
+    <p>Snaga: @Model.Snaga KS</p>
+    <p>Gorivo: @Model.Gorivo</p>
+    <p>Karoserija: @Model.Karoserija</p>
+    <p>Opis: @Model.Opis</p>
+    <p>Cena: @Model.Cena €</p>
+    <p>Kontakt: @Model.Kontakt</p>
+</div>

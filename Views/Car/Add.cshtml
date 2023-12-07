@@ -1,0 +1,23 @@
+﻿@model ZadatakPolovniAuto.Models.Car
+
+@{
+    ViewData["Title"] = "Dodaj automobil";
+}
+
+<h1>Dodaj novi automobil</h1>
+
+<form asp-controller="Car" asp-action="Add" method="post">
+    <div>
+        <label asp-for="Marka">Marka:</label>
+        <input asp-for="Marka" />
+        <span asp-validation-for="Marka"></span>
+    </div>
+    <div>
+        <label asp-for="Model">Model:</label>
+        <input asp-for="Model" />
+        <span asp-validation-for="Model"></span>
+    </div>
+   
+
+    <button type="submit">Dodaj</button>
+</form>

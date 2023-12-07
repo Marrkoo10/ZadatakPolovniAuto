@@ -1,0 +1,20 @@
+﻿@model List<ZadatakPolovniAuto.Models.Car>
+
+@{
+    ViewData["Title"] = "Početna stranica";
+}
+
+<h1>Početna stranica</h1>
+
+<ul>
+    @foreach (var car in Model)
+    {
+        <li>
+            <h2>@car.Marka @car.Model</h2>
+            <p>Cena: @car.Cena €</p>
+            <p>
+                <a asp-action="Details" asp-route-id="@car.Id">Detaljnije</a>
+            </p>
+        </li>
+    }
+</ul>
